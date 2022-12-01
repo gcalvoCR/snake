@@ -10,4 +10,4 @@ The repo!
 - Clone the repo
 - `go build .` to build it
 - `go install` to install it
-- `snake-go run` run it!
+- `snake run` to run it!
