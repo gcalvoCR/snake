@@ -9,9 +9,9 @@ import (
 )
 
 
-func MyFunc() {
+func MyFunc(dur string) {
 
-	duration, err := time.ParseDuration("30s") //Can support ns, us, ms, s, m, h
+	duration, err := time.ParseDuration(dur) //Can support ns, us, ms, s, m, h
 	if err != nil {
 		log.Fatalln("Your time duration could not be understand")
 	}
@@ -24,4 +24,14 @@ func MyFunc() {
 		fmt.Println(t.Sub(start))
 	}
 
+}
+
+func Contains(s []string, str string) bool {
+	for _, v := range s {
+		if v == str {
+			return true
+		}
+	}
+
+	return false
 }
